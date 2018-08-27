@@ -1,0 +1,80 @@
+Using the Diff command
+
+The Diff command outlines the differencees between two files. It is especially 
+helpful becuase in a large file it could take a VERY long time to locate 
+exactly what part of your code is causing a bug. Diff takes to file names
+as input and checks for differences between them. Then it compactly anad
+specifically shows you which lines or blocks of code are different 
+between the two files. Once you have this information, it should drastically
+decrease the amount of time it takes to locate the cause of the bug. as
+a result, this tool also makes it easier for others to help you if you
+are stuck as they don't have to trek through your big files to find 
+your mistake, only analyze a few lines between the different versions 
+of your program.
+
+How could having easy access to the entire history of a file make you a more efficient 
+programmer in the long term?
+
+So having easy access to any change made in the entire history of our file could 
+make us more efficient for a few reasons. First, if we add a new feature or new 
+code in general that breaks the program or introduces a new bug, we could highlight
+the differences between the two versions using something like diff to pinpoint
+where the problem might have been introduced. Second, if anything happens to your
+file in the event of someone else changing it, natural disasters, computer or 
+power failures, you have backups of not only the file, but every change made to 
+it.
+
+
+What do you think are the pros and cons of manually choosing when to create a commit, 
+like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Pros: More user/programmer control and flexibility, Potentially allows for 
+less clutter in the commit log
+
+Cons: Users judgement on commit size may not be the best, changes could get
+lost or hard to find in commit log clutter, Revisiting and changing the files
+in the further future could prove difficult/tedious from user defined commits
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit,
+while others, like Google Docs, treat each file separately?
+
+Some Version controls like git would allow this for moderate-highly 
+related files where changing one file is likely to affect the other
+file in some way. Since git was made with code in mind, and some of the 
+others were not, theres a good chance that certain code files that 
+seperate out clasees or different files  that make up a website for
+example will be related, whereas a few google docs for example will
+proabably not be related enough to have one text file change impact another.
+
+
+
+How can you use the commands git log and git diff to view the history of files?
+
+git log displays all the commits made to a repository of files, as well as:
+which files were changed in the commit, a message about what was changed,
+and a commit ID to uniquely identify each commit. 
+
+Once we found the file commit in question via its message of "Reversed controls",
+we used the git diff command to compare the commit before this commit and this commit,
+to see how many lines were changed in the "Reverse controls" commit, as well as
+specifically the lines that were changed.
+
+
+How might using version control make you more confident to make changes that could break something?
+
+- Using version control allows us to pinpoint where bugs were caused as well as what caused them. 
+- This is done by allowing us to easily and quickly revert to previous versions of our file,
+  to see where a bug was introduced,
+
+ - As a result, because git makes the process of finding and reverting/fixing old bugs more streamlined,
+ - The cost of finding and fixing bugs is far less than it would be than without a version control system.
+
+ -This should make you more confident to make changes, even if sometimes they break things!
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+- Once I becomre more comfortable with git, I'd like to use it
+  on my own personal projects, so that I can make changes that are
+  small or large, and not worry about bugs or breaking my code as much
+
