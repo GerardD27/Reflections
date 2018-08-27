@@ -1,0 +1,14 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initalize a repository it creates a .git file in order
+to track the commits(changes) you make to the files in the
+repository. Whe you initialize a repository, there will be 0
+commits added because you just created the new repository
+
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area is an intermediate place for you to add your files
+before making commits. Files can only be added one at a time, and it
+contains only the files you have specifically added to it. Your working
+directory contains all of you files in that directory. Once you commit changes to the files in the staging area, git bundles the all the contents of the staging area into a single commit and stores it in the repository.
