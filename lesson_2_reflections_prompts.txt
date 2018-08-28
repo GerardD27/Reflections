@@ -20,3 +20,8 @@ Then, when you have added the file(s) to the staging area, you can
 use git diff --staged to check that the file(s) you are about to commit
 only have one logical change compared to the most recent commit
 
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+Branches might be helpful when you decide to create a new feature that 
+you aren't sure is going to work, but you still want to have a working demo of. Accomplishing this with only checkouts without branches could create some bugs and messy overhead down the line. Also, branches can be merged with the master later, if the master was updated in some ways afte the branch was created.
