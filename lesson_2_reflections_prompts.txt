@@ -12,3 +12,11 @@ The staging area is an intermediate place for you to add your files
 before making commits. Files can only be added one at a time, and it
 contains only the files you have specifically added to it. Your working
 directory contains all of you files in that directory. Once you commit changes to the files in the staging area, git bundles the all the contents of the staging area into a single commit and stores it in the repository.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can only make commits to files you have added to the staging area.
+Then, when you have added the file(s) to the staging area, you can
+use git diff --staged to check that the file(s) you are about to commit
+only have one logical change compared to the most recent commit
+
