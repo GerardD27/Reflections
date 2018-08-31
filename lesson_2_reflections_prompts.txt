@@ -43,3 +43,23 @@ coin branch via commits were added to the master branch. We represent them the w
 even after merging we still have acess to all the commits made on the branch that was merged in,
 we just no longer use that branch name or reference to access them. Since they were merged into
 master, those commits can be viewed and checked out from the master branch 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Gits automatic merging:
+pros:
+- some scenarios make it easy to see what belongs in the newly merged
+branch, i.e. only one person made changes to something
+
+-some scenarios make it difficult, like when multiple people
+change the same block of code, git might not know what
+changes should be kept and which should be removed
+
+Always merging manually:
+Pros:
+- Useful when multiple people have changed the same code block
+and you need to discuss to figure out which should stay
+
+Cons:
+- can be tedious for more obvious merges that git would be
+able to handle without a problem
