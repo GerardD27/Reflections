@@ -11,7 +11,9 @@ How is the staging area different from the working directory and the repository?
 The staging area is an intermediate place for you to add your files
 before making commits. Files can only be added one at a time, and it
 contains only the files you have specifically added to it. Your working
-directory contains all of you files in that directory. Once you commit changes to the files in the staging area, git bundles the all the contents of the staging area into a single commit and stores it in the repository.
+directory contains all of you files in that directory. 
+Once you commit changes to the files in the staging area, git bundles the all the contents 
+of the staging area into a single commit and stores it in the repository.
 
 How can you use the staging area to make sure you have one commit per logical change?
 
@@ -24,7 +26,20 @@ only have one logical change compared to the most recent commit
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
 Branches might be helpful when you decide to create a new feature that 
-you aren't sure is going to work, but you still want to have a working demo of. Accomplishing this with only checkouts without branches could create some bugs and messy overhead down the line. Also, branches can be merged with the master later, if the master was updated in some ways afte the branch was created.
+you aren't sure is going to work, but you still want to have a working demo of. 
+Accomplishing this with only checkouts without branches could create some bugs 
+and messy overhead down the line. Also, branches can be merged with the master later, 
+if the master was updated in some ways afte the branch was created.
 
 How do the diagrams help you visualize the branch structure?
-Diagrams give us a picture of the commit history, which commits are parents to which other commits, and which commits are specific to a certain branch, or if they are on the master branch
+Diagrams give us a picture of the commit history, which commits are parents to which other commits, 
+and which commits are specific to a certain branch, or if they are on the master branch
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result of merging two branches together adds merges all of the changes from one branch into another
+the other branch. For example, when we merged coins into master, all of the changes made in the 
+coin branch via commits were added to the master branch. We represent them the way we do because
+even after merging we still have acess to all the commits made on the branch that was merged in,
+we just no longer use that branch name or reference to access them. Since they were merged into
+master, those commits can be viewed and checked out from the master branch 
