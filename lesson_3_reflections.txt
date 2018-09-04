@@ -39,7 +39,13 @@ use one instead of another?
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    If you were ever in a place that you would not be able to connect
+    to the internet, like on a plane for example, but still 
+    wanted to know what your remote looked like in terms of 
+    files and commits, you could keep this on the local.
+    you could also perform the same actions as git pull witout being
+    able to connect to the remote by using the fetch and merge 
+    commands, then push once you are able to connect.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
