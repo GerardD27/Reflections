@@ -59,4 +59,9 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    Though making changes in a new branch can add complexity
+    to your local git and your remote github operations, in
+    most cases it is probably the better choice. Creating a branch
+    allows you to test new ideas and features, or allow you to work
+    in parallel without breaking or causing bugs in code you know 
+    already works.
